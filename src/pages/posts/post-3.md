@@ -1,14 +1,15 @@
 ---
-title: 'My Third Blog Post'
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'Mon troisième poste de blog'
 pubDate: 2022-07-01
 description: 'This is the first post of my new Astro blog.'
 author: 'Astro Learner'
 image:
-    url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
+    url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg'
     alt: 'The Astro logo with the word One.'
 tags: ["astro", "blogging", "learning in public"]
 
 ---
-# Mon troisième blog post
+## Déjà trois !
 
 Hey là ! déjà trois !
