@@ -8,7 +8,6 @@ const identity = {
 	firstName: "Romain",
 	country: "France",
 	occupation: "Développeur Frontend",
-	hobbies: ["écriture", "design génératif"],
 };
 
 const skills = [
@@ -22,21 +21,10 @@ const skills = [
 	"Rust",
 	"Astro",
 ];
-
-const happy = true;
-const finished = false;
-const goal = 3;
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h2>... et de mon blog Astro !</h2>
-	<p>Je suis juste en train d'apprendre à me servir d'Astro.js.</p>
-	<p>Ce site évoluera à mesure que j'avancerai dans le tutoriel.</p>
-	<p>
-		A terme il devrait y a voir mes textes (poésie, politique, philosophie,
-		inclassables).
-	</p>
-	<p>Et j'espère bien, quelques exemples de design génératif !</p>
+	<h2>A propos d'Astro</h2>
 
 	<p>Voici quelques faits à propos de moi:</p>
 	<ul>
@@ -44,31 +32,17 @@ const goal = 3;
 		<li>
 			J'habite en {identity.country} et je travaille en tant que {
 				identity.occupation
-			}.
+			} au pass Culture.
 		</li>
-		{
-			identity.hobbies.length >= 2 && (
-				<li>
-					Deux de mes passe-temps: {identity.hobbies[0]} et{" "}
-					{identity.hobbies[1]}
-				</li>
-			)
-		}
+		<li>
+			J'ai jadis essayé de monter une boîte dans la culture :
+			l'Explorateur Culturel, un agenda culturel local et en ligne. Fermé
+			depuis je retenterai peut-être l'expérience un jour.
+		</li>
 	</ul>
 	<p>Je connais un peu de :</p>
 	<ul>
 		{skills.map((skill) => <li class="skill">{skill}</li>)}
 	</ul>
-
-	{happy && <p>Je suis heureux d'apprendre Astro !</p>}
-
-	{finished && <p>J'ai fini le tutoriel !</p>}
-
-	{
-		goal === 3 ? (
-			<p>Mon but est de finir le tutoriel en 3 jours.</p>
-		) : (
-			<p>Mon but n'est pas de finir le tutoriel en trois jours.</p>
-		)
-	}
+	<p>Il m'arrive(ait) de peindre un peu d'aquearelles, que de l'abstrait !</p>
 </BaseLayout>

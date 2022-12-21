@@ -1,9 +1,9 @@
 ---
-const { platform, username, extension } = Astro.props;
+const { platform, username, extension, name } = Astro.props;
 ---
 
 <a href={`https://www.${platform}${extension ? extension : ".com"}/${username}`}
-    >{platform}</a
+    >{name ? name : platform}</a
 >
 
 <style>
