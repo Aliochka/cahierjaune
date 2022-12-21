@@ -1,4 +1,29 @@
 ---
+const pageTitle = "A propos de moi";
+
+const identity = {
+	firstName: "Romain",
+	country: "France",
+	occupation: "Développeur Frontend",
+	hobbies: ["écriture", "design génératif"],
+};
+
+const skills = [
+	"HTML",
+	"CSS",
+	"Javascript",
+	"Typescript",
+	"React",
+	"Python",
+	"processing",
+	"Rust",
+	"Astro",
+	"Writing Docs",
+];
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
 <html lang="en">
@@ -7,13 +32,13 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Cahier jaune</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<a href="/">Page d'accueil</a>
 		<a href="/about/">A propos de moi</a>
 		<a href="/blog/">blog</a>
-		<h1>A propos de moi</h1>
+		<h1>{pageTitle}</h1>
 		<h2>... et de mon blog Astro !</h2>
 		<p>Je suis juste en train d'apprendre à me servir d'Astro.js.</p>
 		<p>Ce site évoluera à mesure que j'avancerai dans le tutoriel.</p>
@@ -22,5 +47,39 @@
 			philosophie, inclassables).
 		</p>
 		<p>Et j'espère bien, quelques exemples de design génératif !</p>
+
+		<p>Voici quelques faits à propos de moi:</p>
+		<ul>
+			<li>Je m'appelle {identity.firstName}.</li>
+			<li>
+				J'habite en {identity.country} et je travaille en tant que {
+					identity.occupation
+				}.
+			</li>
+			{
+				identity.hobbies.length >= 2 && (
+					<li>
+						Deux de mes passe-temps: {identity.hobbies[0]} et{" "}
+						{identity.hobbies[1]}
+					</li>
+				)
+			}
+		</ul>
+		<p>Je connais un peu de :</p>
+		<ul>
+			{skills.map((skill) => <li>{skill}</li>)}
+		</ul>
+
+		{happy && <p>Je suis heureux d'apprendre Astro !</p>}
+
+		{finished && <p>J'ai fini le tutoriel !</p>}
+
+		{
+			goal === 3 ? (
+				<p>Mon but est de finir le tutoriel en 3 jours.</p>
+			) : (
+				<p>Mon but n'est pas de finir le tutoriel en trois jours.</p>
+			)
+		}
 	</body>
 </html>
