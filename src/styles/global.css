@@ -5,18 +5,6 @@
     --color-tag-bg: #f8fcfd;
     --color-grey: #a1a1a1;
     --color-font: #000;
-
-    --color-dark-primary: #0d0950;
-    --color-dark-font: #fff;
-}
-
-.dark body {
-    background-color: var(--color-dark-primary);
-    color: var(--color-dark-font);
-}
-
-.dark .nav-links a {
-    color: var(--color-dark-font);
 }
 
 html {
