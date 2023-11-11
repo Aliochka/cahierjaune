@@ -1,18 +1,18 @@
 a {
-    color: var(--color-accent);
+	color: var(--color-accent);
 }
 
 .tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
 }
 
 .tag {
-    margin: 0.25em;
-    border: solid 1px var(--color-grey);
-    border-radius: 0.5em;
-    padding: 0.5em 1em;
-    font-size: 1.15em;
-    background-color: var(--color-tag-bg);
+	margin: 0.25em;
+	border: solid 1px var(--color-grey);
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+	font-size: 1.15em;
+	background-color: var(--color-tag-bg);
 }

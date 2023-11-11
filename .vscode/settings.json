@@ -1,0 +1,6 @@
+{
+  "editor.tabSize": 2,
+  "[astro]": {
+    "editor.tabSize": 2
+  }
+}
