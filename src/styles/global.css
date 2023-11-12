@@ -18,12 +18,13 @@ body {
 	padding: 1rem;
 	line-height: 1.5;
 	background:
-		linear-gradient(17deg, var(--color-primary), rgba(245, 245, 246, 0.7) 6% 92%, var(--color-primary)),
-		linear-gradient(159deg, var(--color-primary), rgba(245, 245, 246) 5% 87%, var(--color-primary));
+		linear-gradient(17deg, rgba(245, 245, 246, 0.7), rgba(245, 245, 246, 0.7), rgba(245, 245, 246, 0.7)),
+		linear-gradient(17deg, var(--color-primary), rgba(245, 245, 246, 0.6) 16% 82%, var(--color-primary)),
+		linear-gradient(159deg, var(--color-primary), rgba(245, 245, 246) 25% 82%, var(--color-primary));
 	background-attachment: fixed;
 
 	color: var(--color-font);
-	font-family: serif;
+	font-family: 'Noto Serif Kannada Variable', serif;
 	font-size: 16px;
 }
 
@@ -34,19 +35,23 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 1rem 0;
+	margin: 2rem 0;
 	color: var(--color-font);
-	font-family: sans-serif;
+	font-family: 'Quicksand Variable', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 h1 {
-	font-size: 2.2rem;
-	font-size: clamp(1.9rem, 4vw, 2.2rem);
+	font-size: 2.5rem;
+	font-size: clamp(2.1rem, 4vw, 2.5rem);
+	font-weight: 700;
 }
 
 h2 {
 	font-size: 1.9rem;
 	font-size: clamp(1.7rem, 4vw, 1.9rem);
+	font-weight: 600;
 }
 
 h3 {

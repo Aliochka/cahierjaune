@@ -17,3 +17,12 @@ All commands are run from the root of the project, from a terminal:
 
 - fluid typographie
   https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/ (i don't even respect their advices... :/)
+
+- fonts
+  https://fontsource.org/
+  https://www.smashingmagazine.com/2011/03/how-to-choose-a-typeface/
+
+besley
+Petrona
+Noto Serif hq
+Playfair Display
