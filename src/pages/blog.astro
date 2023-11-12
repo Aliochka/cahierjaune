@@ -1,32 +1,49 @@
 ---
-import "../styles/tags.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
 
-const pageTitle = "Le blog"
+const pageTitle = "Le blog";
 const allPosts = await Astro.glob("./blog/*.md");
-const allPublishedPosts = allPosts.filter(post => !post.frontmatter.draft)
-const tags = [...new Set(allPublishedPosts.map((post) => post.frontmatter.tags).flat())];
+const allPublishedPosts = allPosts.filter((post) => !post.frontmatter.draft);
+const categories = [
+  ...new Set(allPublishedPosts.map((post) => post.frontmatter.tags).flat()),
+];
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h2>Seulement un premier post issu du tuto astro pour l'instant :).</h2>
-	<ul>
-		{
-			allPublishedPosts.map((post) => (
-				<BlogPost url={post.url} title={post.frontmatter.title} />
-			))
-		}
-	</ul>
+  <h2>Seulement un premier post issu du tuto astro pour l'instant :).</h2>
+  <ul>
+    {
+      allPublishedPosts.map((post) => (
+        <BlogPost url={post.url} title={post.frontmatter.title} />
+      ))
+    }
+  </ul>
 
-	<h2>Les différentes catégories utilisés dans les blogs :</h2>
-	<div class="tags">
-		{
-			tags.map((tag) => (
-				<p class="tag">
-					<a href={`/categories/${tag}`}>{tag}</a>
-				</p>
-			))
-		}
-	</div>
+  <h2>Les différentes catégories utilisés dans les blogs :</h2>
+  <ul>
+    {
+      categories.map((category) => (
+        <li>
+          <a href={`/categories/${category}`}>{category}</a>
+        </li>
+      ))
+    }
+  </ul>
 </BaseLayout>
+
+<style>
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  li {
+    margin: 0.25em;
+    border: solid 1px var(--color-accent);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    list-style-type: none;
+  }
+</style>
