@@ -5,24 +5,24 @@ import Footer from "../components/Footer.astro";
 
 const { pageTitle } = Astro.props;
 const { frontmatter } = Astro.props;
-
 ---
 
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Cahier Jaune - {frontmatter?.title || pageTitle}</title>
-    </head>
-    <body>
-        <Header />
-        <h1>{pageTitle}</h1>
-        <slot />
-        <Footer />
-        <script>
-            import "../scripts/menu.js";
-        </script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Cahier Jaune - {frontmatter?.title || pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
+<script>
+  import "../scripts/menu.js";
+</script>

@@ -18,12 +18,16 @@ body {
 	min-height: 100vh;
 	padding: 1rem;
 	line-height: 1.5;
-	color: var(--color-font);
-	font-family: serif;
 	background:
 		linear-gradient(17deg, var(--color-primary), rgba(255, 255, 255, 0.7) 8% 89%, var(--color-primary)),
 		linear-gradient(159deg, var(--color-primary), rgba(255, 255, 255) 7% 84%, var(--color-primary));
+	background-attachment: fixed;
+
+	color: var(--color-font);
+	font-family: serif;
+	font-size: 16px;
 }
+
 
 * {
 	box-sizing: border-box;
@@ -31,36 +35,41 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
+	margin: 1rem 0;
 	color: var(--color-font);
 	font-family: sans-serif;
 }
 
 h1 {
-	margin: 1rem 0;
-	font-size: 2.7rem;
+	font-size: 2.2rem;
+	font-size: clamp(1.9rem, 4vw, 2.2rem);
 }
 
 h2 {
-	margin: 1rem 0;
-	font-size: 2.3rem;
+	font-size: 1.9rem;
+	font-size: clamp(1.7rem, 4vw, 1.9rem);
 }
 
 h3 {
-	margin: 1rem 0;
-	font-size: 2rem;
+	font-size: 1.8rem;
+	font-size: clamp(1.5rem, 4vw, 1.8rem);
 }
 
 h4 {
-	margin: 1rem 0;
 	font-size: 1.7rem;
+	font-size: clamp(1.3rem, 4vw, 1.7rem);
 }
 
 h5 {
-	margin: 1rem 0;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
+	font-size: clamp(1.2rem, 4vw, 1.6rem);
 }
 
 h6 {
-	margin: 1rem 0;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
+	font-size: clamp(1.1rem, 4vw, 1.5rem);
+}
+
+p, a, ul {
+	font-size: clamp(1rem, 4vw, 1.2rem);
 }

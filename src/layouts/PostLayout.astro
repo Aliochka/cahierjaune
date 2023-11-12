@@ -3,21 +3,21 @@ import "../styles/tags.css";
 import BaseLayout from "./BaseLayout.astro";
 
 const { frontmatter } = Astro.props;
-
 ---
 
 <BaseLayout>
-	<p>{frontmatter.description}</p>
-	<p>Ecrit par : {frontmatter.author}</p>
-	<p>Publié le : {frontmatter.pubDate.slice(0, 10)}</p>
-	<slot />
-	<div class="tags">
-		{
-			frontmatter.tags.map((tag) => (
-				<p class="tag">
-					<a href={`/categories/${tag}`}>{tag}</a>
-				</p>
-			))
-		}
-	</div>
+  <p>{frontmatter.description}</p>
+  <p>Ecrit par : {frontmatter.author}</p>
+  <p>Publié le : {frontmatter.pubDate.slice(0, 10)}</p>
+  <h1>{frontmatter.title}</h1>
+  <slot />
+  <div class="tags">
+    {
+      frontmatter.tags.map((tag) => (
+        <p class="tag">
+          <a href={`/categories/${tag}`}>{tag}</a>
+        </p>
+      ))
+    }
+  </div>
 </BaseLayout>
