@@ -19,6 +19,7 @@ body {
 	padding: 1rem;
 	line-height: 1.5;
 	color: var(--color-font);
+	font-family: serif;
 	background:
 		linear-gradient(17deg, var(--color-primary), rgba(255, 255, 255, 0.7) 8% 89%, var(--color-primary)),
 		linear-gradient(159deg, var(--color-primary), rgba(255, 255, 255) 7% 84%, var(--color-primary));
@@ -28,68 +29,38 @@ body {
 	box-sizing: border-box;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--color-font);
+	font-family: sans-serif;
+}
+
 h1 {
 	margin: 1rem 0;
-	font-size: 2.5rem;
+	font-size: 2.7rem;
 }
 
-
-/* nav styles */
-.hamburger {
-	padding-right: 20px;
-	cursor: pointer;
+h2 {
+	margin: 1rem 0;
+	font-size: 2.3rem;
 }
 
-.hamburger .line {
-	display: block;
-	width: 40px;
-	height: 5px;
-	margin-bottom: 10px;
-	background-color: var(--color-secondary);
+h3 {
+	margin: 1rem 0;
+	font-size: 2rem;
 }
 
-.nav-links {
-	width: 100%;
-	top: 5rem;
-	left: 48px;
-	background-color: var(--color-secondary);
-	display: none;
-	margin: 0;
+h4 {
+	margin: 1rem 0;
+	font-size: 1.7rem;
 }
 
-.nav-links a {
-	display: block;
-	text-align: center;
-	padding: 10px 0;
-	text-decoration: none;
-	font-size: 1.2rem;
-	font-weight: bold;
-	text-transform: uppercase;
+h5 {
+	margin: 1rem 0;
+	font-size: 1.5rem;
 }
 
-.nav-links a:hover, a:focus {
-	background-color: var(--color-secondary);
-}
-
-.expanded {
-	display: unset;
-}
-
-@media screen and (min-width: 636px) {
-	.nav-links {
-		margin-left: 5em;
-		display: block;
-		position: static;
-		width: auto;
-		background: none;
-	}
-
-	.nav-links a {
-		display: inline-block;
-		padding: 15px 20px;
-	}
-
-	.hamburger {
-		display: none;
-	}
+h6 {
+	margin: 1rem 0;
+	font-size: 1.3rem;
 }
