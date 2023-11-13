@@ -1,29 +1,62 @@
 <footer>
-  <p>Vous pouvez me retrouver</p>
-  <ul>
-    <li>
-      <a href="mailto:romain.chaffal@gmail.com">par mail</a> ,
-    </li>
-    <li><a href="https://www.github.com/Aliochka">sur Github</a> ,</li>
-    <li><a href="https://www.twitter.com/alio_42">ou sur Twitter</a> .</li>
-  </ul>
+  <p>Vous pouvez me joindre, ou me retrouver :</p>
+  <div>
+    <ul>
+      <li>
+        <a href="mailto:romain.chaffal@gmail.com">par mail</a> ,
+      </li>
+      <li><a href="https://www.github.com/Aliochka">sur Github</a> ,</li>
+      <li><a href="https://www.twitter.com/alio_42">ou sur Twitter</a> .</li>
+    </ul>
+  </div>
 </footer>
 
 <style>
   footer {
+    border-top: groove 0.6em var(--color-primary);
+    margin-top: auto;
+  }
+
+  p {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+
+  div {
     display: flex;
     justify-content: center;
-    margin-top: auto;
-    padding: 3rem auto;
-    gap: 1rem;
   }
 
   ul {
     display: flex;
     padding-left: 0;
-    gap: 1rem;
+    height: fit-content;
+    margin-top: 0;
   }
+  @media (max-width: 500px) {
+    ul {
+      flex-direction: column;
+    }
+  }
+
   li {
+    text-align: center;
     list-style: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  li:hover {
+    background-color: var(--color-hover);
+  }
+  li:focus-within {
+    outline: var(--color-focus) solid 0.2em;
+
+    & a {
+      outline: none;
+    }
   }
 </style>
