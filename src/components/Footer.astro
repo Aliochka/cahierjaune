@@ -1,30 +1,29 @@
----
-import Social from "./Social.astro";
----
-
 <footer>
-	<p>
-		Retrouvez moi sur :
-		<Social platform="github" username="Aliochka" />
-		<Social platform="twitter" username="alio_42" />
-		<Social
-		name="mastodon"
-		platform="piaille"
-		extension=".fr"
-		username="@romain_chaffal"
-		/>
-		<Social
-		platform="linkedin"
-		extension=".com/in"
-		username="romain-chaffal"
-		/>
-	</p>
+  <p>Vous pouvez me retrouver</p>
+  <ul>
+    <li>
+      <a href="mailto:romain.chaffal@gmail.com">par mail</a> ,
+    </li>
+    <li><a href="https://www.github.com/Aliochka">sur Github</a> ,</li>
+    <li><a href="https://www.twitter.com/alio_42">ou sur Twitter</a> .</li>
+  </ul>
 </footer>
 
 <style>
-	footer {
-		display: flex;
-		gap: 1rem;
-		margin-top: 2rem;
-	}
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding: 3rem auto;
+    gap: 1rem;
+  }
+
+  ul {
+    display: flex;
+    padding-left: 0;
+    gap: 1rem;
+  }
+  li {
+    list-style: none;
+  }
 </style>

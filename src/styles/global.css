@@ -4,6 +4,7 @@
 	--color-accent: orange;
 	--color-grey: #a1a1a1;
 	--color-font: rgb(17, 20, 50);
+	--color-focus: green;
 }
 
 html {
@@ -16,7 +17,6 @@ body {
 	max-width: 80ch;
 	min-height: 100vh;
 	padding: 1rem;
-	line-height: 1.5;
 	background:
 		linear-gradient(17deg, rgba(245, 245, 246, 0.7), rgba(245, 245, 246, 0.7), rgba(245, 245, 246, 0.7)),
 		linear-gradient(17deg, var(--color-primary), rgba(245, 245, 246, 0.6) 16% 82%, var(--color-primary)),
@@ -26,6 +26,8 @@ body {
 	color: var(--color-font);
 	font-family: 'Noto Serif Kannada Variable', serif;
 	font-size: 16px;
+	display: flex;
+	flex-direction: column;
 }
 
 
@@ -76,8 +78,5 @@ h6 {
 
 p, a, ul {
 	font-size: clamp(1rem, 4vw, 1.2rem);
-}
-
-a {
-	color: var(--color-secondary);
+	color: var(--color-font);
 }

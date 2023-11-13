@@ -26,3 +26,5 @@ besley
 Petrona
 Noto Serif hq
 Playfair Display
+
+Quicksand

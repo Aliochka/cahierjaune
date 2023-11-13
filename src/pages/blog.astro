@@ -11,7 +11,7 @@ const categories = [
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Seulement un premier post issu du tuto astro pour l'instant :).</h2>
+  <h1>Le Blog.</h1>
   <ul>
     {
       allPublishedPosts.map((post) => (
@@ -20,8 +20,11 @@ const categories = [
     }
   </ul>
 
-  <h2>Les différentes catégories utilisés dans les blogs :</h2>
-  <ul>
+  <!--
+    Think two seconds Romain you have noooo categories right now,
+    Do this later !!!!
+    <h2>Les différentes catégories utilisés dans les blogs :</h2>
+  <ul class="categories">
     {
       categories.map((category) => (
         <li>
@@ -29,21 +32,37 @@ const categories = [
         </li>
       ))
     }
-  </ul>
+  </ul> -->
 </BaseLayout>
 
 <style>
-  ul {
+  /* .categories {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    gap: 0.5rem;
+    margin-top: auto;
   }
 
   li {
-    margin: 0.25em;
-    border: solid 1px var(--color-accent);
+    border: solid 1px var(--color-secondary);
     border-radius: 0.5em;
-    padding: 0.5em 1em;
     list-style-type: none;
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
+  li:hover {
+    background-color: var(--color-accent);
+  }
+
+  li:focus-within {
+    outline: var(--color-focus) solid 2px;
+  }
+  a {
+    padding: 0.5em 1em 0em 1em;
+    text-decoration: none;
+    outline: none;
+  } */
 </style>
