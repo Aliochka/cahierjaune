@@ -1,11 +1,35 @@
----
-import Hamburger from "./Hamburger.astro";
-import Navigation from "./Navigation.astro";
----
-
 <header>
   <nav>
-    <Hamburger />
-    <Navigation />
+    <ul>
+      <li>
+        <a href="/">Le blog</a>
+      </li>
+      <li>
+        <a href="/a-propos/">A propos</a>
+      </li>
+    </ul>
   </nav>
 </header>
+
+<style>
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  li {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border-radius: 0.3rem;
+  }
+
+  li:hover {
+    background-color: var(--color-accent);
+  }
+  a:focus {
+    background-color: var(--color-secondary);
+  }
+</style>
