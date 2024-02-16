@@ -63,6 +63,7 @@ Cette liste n'est pas une todo-liste c'est plus une réflexion-liste :
 - de politiques publiques (je rêve d'être un jour designer de politiques publiques - pas dans régime facho svp)
 - de philosophie, de ce qu'on peut dire ou comment transformer le monde
 - de poésie mathématiques (elles me font rêver c'est plus fort que moi)
+- de poésie tout court, je vais faire un peu de remplissage avec d'ancien trucs si ça ne vous dérange pas
 - de dieux, de religions et du paradoxe de Fermi
 - de je sais pas quoi on verra bien
 - de n'importe quoi
@@ -70,12 +71,17 @@ Cette liste n'est pas une todo-liste c'est plus une réflexion-liste :
 
 Autre chose, je m'autorise à revenir sur ce que j'ai écris, à le supprimer, le modifier, mais comme j'utilise un outils historicisé vous en aurez la trace.
 
-## Une question, une envie, une erreur, un truc cassé sur le blog ?
+## Avertissement
 
 Je ne suis un expert en rien, j'aime parler de plein de choses je peux donc facilement dire des conneries !
+Et vous le découvrirez bien vite, j'adore les ordinateurs et ça me donne un petit côté startup nation qui pourra déplaire à certains.
+
+## Une question, une envie, une erreur, un truc cassé sur le blog ?
 
 Envoyez-moi un mail (surtout si c'est une question d'accessibilité, tout le monde devrait avoir accès à la toile mondiale) !
 A ce jour je ne suis pas sous l'eau de demande, j'essairai de prendre le temps de répondre.
+
+Certaines fautes d'orthogaphe sont de la licence poétique beaucoup d'autres juste des étourderies :/
 
 Ou si github ne vous fait pas peur créez directement une issue : https://github.com/Aliochka/cahierjaune/issues
 
