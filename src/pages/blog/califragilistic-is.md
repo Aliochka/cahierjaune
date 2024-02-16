@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Califragilistic is"
-pubDate: 2022-07-01
+pubDate: 2017-01-01
 description: "Un poème en franglais, avec des mots inventés"
 author: "Romain"
 tags: ["poème"]
