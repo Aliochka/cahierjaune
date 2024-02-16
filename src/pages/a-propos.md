@@ -14,20 +14,20 @@ Vous aimeriez-bien savoir où et chez qui vous avez mis les pieds n'est-ce pas ?
 Le cahier jaune c'est le cahier qui vient après le mini livret bleu à spirale et avant le petit moleskine noir.
 Bon, d'accord ça ne vous avance pas trop...
 
-Quand j'étais petit j'adorais m'échapper avec les livres et mon rêve était un jour de devenir écrivain, de l'eau à couler sous les ponts aujourd'hui j'écris surtout du code (du javascript principalement). Dans cette quête de l'écrivanité vers mes 14 ans j'ai pris l'habitude d'emporter toujours avec moi un petit carnet, pour noter mes idées, au départ surtout mes calembours les plus fameux ou les mots que je découvrais.
+Quand j'étais petit j'adorais m'échapper avec les livres et mon rêve était un jour de devenir écrivain, de l'eau a coulé sous les ponts, aujourd'hui j'écris surtout du code (du javascript principalement). Dans cette quête de l'écrivanité vers mes 14 ans j'ai pris l'habitude d'emporter toujours avec moi un petit carnet, pour noter mes idées, au départ surtout mes calembours les plus fameux ou les mots que je découvrais :
 
 > C'est en forgeant qu'on devient forgeron, c'est en sciant que Léonard de Vinci
 
-J'ai pris l'habitude dans les suivants d'écrire selon mes pensées, un peu à la mode de l'écriture automatique (des surréalistes si je ne dis pas de bêtises). J'y découvrais ma philosophie, réinventé un genre de cogito, pleurer sur l'ennui et la vacuité de ma vie.
+J'ai pris l'habitude dans les carnets suivants d'écrire selon mes pensées, un peu à la mode de l'écriture automatique (des surréalistes si je ne dis pas de bêtises). J'y découvrais ma philosophie, réinventais un genre de cogito, pleurais sur l'ennui et la vacuité de ma pauvre petite vie (je vais bien ne vous en faites pas).
 
-Tandis que mon existence c'est numérisée, j'ai délaissé le crayon pour le clavier. Le but était là de construire un système de pensée englobant le monde entier, le caca, la culture, la guerre (j'aime pas trop ça) et la paix.
-L'idée était toujours guidé par ses pensées et les vapeurs de Marie Jeanne de construire un oeuvre petit à petit qui brasse et rassemble tous les aspects de la vie.
+Tandis que mon existence s'est numérisée, j'ai délaissé le crayon pour le clavier. Le but était là de construire un système de pensée englobant le monde entier, le caca, la culture, la guerre (j'aime pas trop ça) et la paix, le rouge le noir, le plein le vide...
+L'idée était toujours guidé par ses pensées et les vapeurs de Marie Jeanne de construire un oeuvre petit à petit qui brasse et rassemble tous les aspects de la vie, dans le but de rendre le monde un peu meilleur.
 
 La vie est ce qu'elle est, un petit tour chez les fous et les longs déserts des dépressions, le ressac incessant de mes mots sur les mêmes récifs, l'impression d'être lu au moment même où j'écrivais m'ont complètement décidé à lâcher le crayon (et le clavier).
 
 Et le cahier jaune dans tout ça ?
 
-Le cahier jaune, c'est avant tout un cahier de jeunesse, un cahier d'expérience, on y trouve mes premiers vrai chagrin d'amour, un deuil très difficile à surmonter, les premiers essais d'écriture automatique, quelques moyens poèmes (faut pas trop se dévaloriser dit-on), des mises en situation imaginaire, ...
+Le cahier jaune, c'est avant tout un cahier de jeunesse, un cahier d'expérience, on y trouve mes premiers vrai chagrins d'amour, un deuil très difficile à surmonter, des premiers essais d'écriture différente, quelques moyens poèmes (faut pas trop se dévaloriser dit-on), des mises en situation imaginaire, ...
 
 Voilà c'est ce que j'espère amener ici, un peu de tout, de plusieurs formes.
 
@@ -42,8 +42,8 @@ Une première chose est que je crois qu'un meilleur monde est possible, il ya ce
 > La grande révolution démocratique qui doit amener l'homme a vivre en harmonie avec la nature, qui va l'amener à être plus libre, plus heureux, plus fraternel a déjà eu lieu.
 
 Quand ça ??? en mai 2019 dans une twingo sur le plateau des Millevaches.
-Et pourquoi on ne voit rien ? Parce qu'elle n'a atteint pour l'instant que des petites gens. Beaucoup pensent encore que notre salu viendra de l'argent ou du pouvoir...
-Mais pas vous ! vous vous prenez dès à présent les bonnes décisions, vous battez pour elles et bien sûr essuyez de nombreuses défaites, ne baissez pas les bras, le jeu en vaut la chandèle !
+Et pourquoi on ne voit rien ? Parce qu'elle n'a atteint pour l'instant que des petites gens. Beaucoup pensent encore que notre salut viendra de l'argent ou du pouvoir...
+Mais pas vous ! vous vous prenez dès à présent les bonnes décisions (celles que vous pensez être les meilleures), vous vous battez pour elles et bien sûr essuyez de nombreuses défaites, ne baissez pas les bras, le jeu en vaut la chandèle !
 
 Bon honnêtement ici, c'est pour dire bonjour je développerai sans doute l'idée plus tard.
 
@@ -69,7 +69,7 @@ Cette liste n'est pas une todo-liste c'est plus une réflexion-liste :
 - de n'importe quoi
 - de trucs dont j'ai envie de parler
 
-Autre chose, je m'autorise à revenir sur ce que j'ai écris, à le supprimer, le modifier, mais comme j'utilise un outils historicisé vous en aurez la trace.
+Autre chose, je m'autorise à revenir sur ce que j'ai écris, à le supprimer, le modifier, mais comme j'utilise un outil historicisé vous en aurez la trace.
 
 ## Avertissement
 
@@ -80,6 +80,7 @@ Et vous le découvrirez bien vite, j'adore les ordinateurs et ça me donne un pe
 
 Envoyez-moi un mail (surtout si c'est une question d'accessibilité, tout le monde devrait avoir accès à la toile mondiale) !
 A ce jour je ne suis pas sous l'eau de demande, j'essairai de prendre le temps de répondre.
+Ou twitter, ou mastodon, un pigeon voyageur...
 
 Certaines fautes d'orthogaphe sont de la licence poétique beaucoup d'autres juste des étourderies :/
 
