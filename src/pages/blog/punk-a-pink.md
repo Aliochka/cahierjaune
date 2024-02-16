@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: "Punk à Pink"
 pubDate: 2018-04-26
-description: "un poème playlist"
+description: "Un poème playlist"
 author: "Romain"
 tags: ["poème"]
 ---

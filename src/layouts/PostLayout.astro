@@ -2,12 +2,25 @@
 import BaseLayout from "./BaseLayout.astro";
 
 const { frontmatter } = Astro.props;
+
+const date = new Intl.DateTimeFormat("fr-FR", { dateStyle: "full" }).format(
+  new Date(frontmatter.pubDate)
+);
+frontmatter.pubDate.slice(0, 10);
 ---
 
 <BaseLayout>
   <p>{frontmatter.description}</p>
-  <p>Ecrit par : {frontmatter.author}</p>
-  <p>Publié le : {frontmatter.pubDate.slice(0, 10)}</p>
+  <p class="author">Ecrit par : {frontmatter.author}</p>
+  <p>Publié le : {date}</p>
   <h1>{frontmatter.title}</h1>
   <slot />
 </BaseLayout>
+
+<style>
+  p {
+    font-size: clamp(0.8rem, 4vw, 1rem);
+    margin: 0 0.5rem;
+    color: var(--color-font-light);
+  }
+</style>

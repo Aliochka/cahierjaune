@@ -3,6 +3,7 @@
 	--color-secondary: #5445F5;
 	--color-accent: #F5B745;
 	--color-font: rgb(17, 20, 50);
+	--color-font-light: rgb(63, 65, 56);
 	--color-hover: var(--color-accent);
 	--color-focus: var(--color-secondary);
 }
