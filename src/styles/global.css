@@ -6,6 +6,14 @@
 	--color-font-light: rgb(63, 65, 56);
 	--color-hover: var(--color-accent);
 	--color-focus: var(--color-secondary);
+
+	/* tags */
+	--color-web: #E6AA4C;
+	--color-politique: #E6CF4C;
+	--color-bonjour: #E6BC4C;
+	--color-poème: #E6914C;
+	--color-philosophie: #E6A24C;
+	--color-scout: #C9E64C;
 }
 
 html {

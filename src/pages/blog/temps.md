@@ -4,7 +4,7 @@ title: "Temps"
 pubDate: 2018-05-01
 description: "Pause clope au ministère de la culure"
 author: "Romain"
-tags: ["réflexion"]
+tags: ["philosophie"]
 ---
 
 Tous les matins je fume une cigarette avant d’aller travailler, dans un petit passage entre les colonnes Buren et la rue de Valois.

@@ -4,7 +4,7 @@ title: "Oh ! Mystères et boules de lettres."
 pubDate: 2018-04-12
 description: "Très honnêtement, impossible de me souvenir de ce que j'ai bien pu vouloir dire ici."
 author: "Romain"
-tags: ["mon tag"]
+tags: ["poème"]
 ---
 
 L’addition

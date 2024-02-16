@@ -4,28 +4,72 @@ const { post } = Astro.props;
 const date = new Intl.DateTimeFormat("fr-FR", { dateStyle: "short" }).format(
   new Date(post.frontmatter?.pubDate)
 );
+
+function getTagClass(tag) {
+  const validTags = [
+    "web",
+    "politique",
+    "bonjour",
+    "poème",
+    "philosophie",
+    "scout",
+  ];
+  return validTags.includes(tag) ? tag : "";
+}
 ---
 
 <li>
   <a href={post.url}>{post.frontmatter.title}</a>
   <p>{date}</p>
   <p class="description">{post.frontmatter.description}</p>
+  {
+    post.frontmatter.tags.map((tag) => (
+      <span class:list={["tag", { [getTagClass(tag)]: true }]}>{tag}</span>
+    ))
+  }
 </li>
 
 <style>
   li {
     list-style: none;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
   p,
   a {
-    margin: 0 1rem;
+    margin: 0;
   }
   a {
     font-weight: bold;
   }
-
   .description {
     color: var(--color-font-light);
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem 0 0.5rem;
+    border-radius: 0.25rem;
+    border: 0.15rem dotted;
+
+    &.web {
+      border-color: var(--color-web);
+    }
+    &.politique {
+      border-color: var(--color-politique);
+    }
+    &.bonjour {
+      border-color: var(--color-bonjour);
+    }
+    &.poème {
+      border-color: var(--color-poème);
+    }
+    &.philosophie {
+      border-color: var(--color-philosophie);
+    }
+    &.scout {
+      border-color: var(--color-scout);
+    }
   }
 </style>
