@@ -1,7 +1,8 @@
 ---
 const { post } = Astro.props;
+
 const date = new Intl.DateTimeFormat("fr-FR", { dateStyle: "short" }).format(
-  new Date(post.frontmatter.pubDate)
+  new Date(post.frontmatter?.pubDate)
 );
 ---
 
