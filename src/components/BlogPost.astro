@@ -7,8 +7,8 @@ const date = new Intl.DateTimeFormat("fr-FR", { dateStyle: "short" }).format(
 ---
 
 <li>
-  <p>{date}</p>
   <a href={post.url}>{post.frontmatter.title}</a>
+  <p>{date}</p>
   <p class="description">{post.frontmatter.description}</p>
 </li>
 
@@ -20,6 +20,9 @@ const date = new Intl.DateTimeFormat("fr-FR", { dateStyle: "short" }).format(
   p,
   a {
     margin: 0 1rem;
+  }
+  a {
+    font-weight: bold;
   }
 
   .description {
