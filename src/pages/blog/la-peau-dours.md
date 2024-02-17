@@ -4,7 +4,7 @@ title: "La peau d’ours"
 pubDate: 2017-10-05
 description: "Une histoire de veillée scout"
 author: "Romain"
-tags: ["scout", "poème"]
+tags: ["récit"]
 ---
 
 Aujourd’hui, j’enfile mes chaussettes, mes bottes, mon pull, mon manteau, mes gants, mes mitaines, ma peau d’ours

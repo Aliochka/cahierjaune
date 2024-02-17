@@ -7,48 +7,48 @@ author: "Romain"
 tags: ["poème"]
 ---
 
-L’addition
-La soustraction
+L’addition \
+La soustraction \
 Et la révolution
 
-Les calembours de la république
+Les calembours de la république \
 Et l’harmonie
 
-Perfection
-Douceur
+Perfection \
+Douceur \
 Caresse
 
-Perception de l’ecrin
-Croissance contagieuse
-Pluie diluvienne
+Perception de l’ecrin \
+Croissance contagieuse \
+Pluie diluvienne \
 Harem olfactif
 
-Acide
-Étoile
+Acide \
+Étoile \
 Comète
 
-Crétinisation bourgeoise
-Échos dialectique
-Dichotomie prométhéenne
+Crétinisation bourgeoise \
+Échos dialectique \
+Dichotomie prométhéenne \
 Folie préméditée
 
-Lapin
-Mouton
+Lapin \
+Mouton \
 Cochon
 
-Antilopes antédiluviennes
-Galeux brillant
-Archange boitillant
+Antilopes antédiluviennes \
+Galeux brillant \
+Archange boitillant \
 Salopes anticonstitutionnelles
 
-Clopin
-Clopant
+Clopin \
+Clopant \
 Riant
 
-La montagne oreiller
-La mer en vapeur
+La montagne oreiller \
+La mer en vapeur \
 La moutarde en ketchup
 
-Rien à dire
-Parler
+Rien à dire \
+Parler \
 Se taire

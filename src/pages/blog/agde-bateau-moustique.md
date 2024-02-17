@@ -4,7 +4,7 @@ title: "Agde Bateau Moustique"
 pubDate: 2017-08-01
 description: "Une nuit difficile sur un petit bateau plein de moustiques, heureusement il ya une loutre."
 author: "Romain"
-tags: ["poème"]
+tags: ["récit"]
 ---
 
 Par les couilles de Belzébuth ça faisait longtemps que je n'avais pas pas réussi à dormir comme ça !
