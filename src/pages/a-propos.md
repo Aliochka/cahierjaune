@@ -75,6 +75,7 @@ Autre chose, je m'autorise à revenir sur ce que j'ai écris, à le supprimer, l
 
 Je ne suis un expert en rien, j'aime parler de plein de choses je peux donc facilement dire des conneries !
 Et vous le découvrirez bien vite, j'adore les ordinateurs et ça me donne un petit côté startup nation qui pourra déplaire à certains.
+Les dates sont plutôt indicatives qu'exact, j'ai essayé tant bien que mal de me rapprocher de la réalité, un premier janvier indique que j'avais un gros doute.
 
 ## Une question, une envie, une erreur, un truc cassé sur le blog ?
 
