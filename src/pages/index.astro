@@ -21,54 +21,10 @@ const categories = [
   <ul>
     {allPublishedPosts.map((post) => <BlogPost post={post} />)}
   </ul>
-
-  <!--
-    Think two seconds Romain you have noooo categories right now,
-    Do this later !!!!
-    <h2>Les différentes catégories utilisés dans les blogs :</h2>
-  <ul class="categories">
-    {
-      categories.map((category) => (
-        <li>
-          <a href={`/categories/${category}`}>{category}</a>
-        </li>
-      ))
-    }
-  </ul> -->
 </BaseLayout>
 
 <style>
   ul {
     padding: 0;
   }
-
-  /* .categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: auto;
-  }
-
-  li {
-    border: solid 1px var(--color-secondary);
-    border-radius: 0.5em;
-    list-style: none;
-    color: var(--color-secondary);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-  li:hover {
-    background-color: var(--color-accent);
-  }
-
-  li:focus-within {
-    outline: var(--color-focus) solid 2px;
-  }
-  a {
-    padding: 0.5em 1em 0em 1em;
-    text-decoration: none;
-    outline: none;
-  } */
 </style>
