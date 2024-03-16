@@ -11,9 +11,6 @@ const allPublishedPosts = allPosts
       new Date(postB.frontmatter.pubDate).getTime() -
       new Date(postA.frontmatter.pubDate).getTime()
   );
-const categories = [
-  ...new Set(allPublishedPosts.map((post) => post.frontmatter.tags).flat()),
-];
 ---
 
 <BaseLayout pageTitle={pageTitle}>
