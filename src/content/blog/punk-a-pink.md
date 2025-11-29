@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Punk à Pink"
 pubDate: 2018-04-26
 description: "Un poème playlist"

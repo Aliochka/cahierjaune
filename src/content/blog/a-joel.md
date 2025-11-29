@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "A Joël"
 pubDate: 2012-01-01
 description: "Un poème pour Joël, je ne sais pas ce que tu es devenu mais j'espère que tu es heureux."

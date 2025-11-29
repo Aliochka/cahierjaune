@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Yo!"
 pubDate: 2020-06-05
 description: "Où pour la première fois je parle publiquement de cette fameuse révolution"

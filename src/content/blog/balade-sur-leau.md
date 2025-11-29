@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Balade sur l'eau"
 pubDate: 2015-01-01
 description: "Dans une association qui disait que l'eau c'est bien et essayé de l'apporter aux autres j'ai écris cette petite ballade"

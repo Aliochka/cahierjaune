@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "New York"
 pubDate: 2015-01-01
 description: "Sans description"

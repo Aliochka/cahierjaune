@@ -1,22 +1,35 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
+import { getCollection } from "astro:content";
 
 const pageTitle = "Le blog";
-const allPosts = await Astro.glob("./blog/*.md");
+
+// On récupère tous les posts de la collection "blog"
+const allPosts = await getCollection("blog");
+
+// On filtre les brouillons et on trie du plus récent au plus ancien
 const allPublishedPosts = allPosts
-  .filter((post) => !post.frontmatter.draft)
+  .filter((post) => !Boolean(post.data.draft))
   .sort(
     (postA, postB) =>
-      new Date(postB.frontmatter.pubDate).getTime() -
-      new Date(postA.frontmatter.pubDate).getTime()
+      new Date(postB.data.pubDate).getTime() -
+      new Date(postA.data.pubDate).getTime()
   );
+
+// On les remappe au format attendu par <BlogPost /> : { frontmatter, url }
+const blogPostsForComponent = allPublishedPosts.map((post) => ({
+  frontmatter: post.data,
+  url: `/blog/${post.slug}/`,
+}));
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h1>Cahier Jaune</h1>
   <ul>
-    {allPublishedPosts.map((post) => <BlogPost post={post} />)}
+    {blogPostsForComponent.map((post) => (
+      <BlogPost post={post} />
+    ))}
   </ul>
 </BaseLayout>
 

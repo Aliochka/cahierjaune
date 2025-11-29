@@ -1,12 +1,44 @@
 ---
+import { record } from "astro:schema";
 import BaseLayout from "./BaseLayout.astro";
+import { getCollection } from "astro:content";
 
 const { frontmatter } = Astro.props;
 
+// frontmatter.pubDate est déjà un Date (z.coerce.date), mais on gère les 2 cas
+const dateObj =
+  frontmatter.pubDate instanceof Date
+    ? frontmatter.pubDate
+    : new Date(frontmatter.pubDate);
+
 const date = new Intl.DateTimeFormat("fr-FR", { dateStyle: "full" }).format(
-  new Date(frontmatter.pubDate)
+  dateObj
 );
-frontmatter.pubDate.slice(0, 10);
+
+// Récupération de tous les posts de la collection "blog"
+const posts = (await getCollection("blog")).filter(p => !Boolean(p.data.draft)).sort(
+  (a, b) =>
+    new Date(a.data.pubDate).getTime() - new Date(b.data.pubDate).getTime()
+);
+
+// slug courant = paramètre de l'URL
+const currentSlug = Astro.params.slug;
+
+// Index du post courant
+const index = posts.findIndex((p) => p.slug === currentSlug);
+
+// Post précédent et suivant
+const previous = index > 0 ? posts[index - 1] : null;
+const next = index < posts.length - 1 ? posts[index + 1] : null;
+
+// debug si tu veux
+console.log({
+  currentSlug,
+  index,
+  total: posts.length,
+  previous: previous?.slug,
+  next: next?.slug,
+});
 ---
 
 <BaseLayout>
@@ -14,7 +46,22 @@ frontmatter.pubDate.slice(0, 10);
   <p class="author">Ecrit par : {frontmatter.author}</p>
   <p>Publié le : {date}</p>
   <h1>{frontmatter.title}</h1>
+
   <slot />
+
+  <nav class="post-nav">
+    {next && (
+      <a href={`/blog/${next.slug}/`} class="prev">
+        ← {next.data.title}
+      </a>
+    )}
+
+    {previous && (
+      <a href={`/blog/${previous.slug}/`} class="next">
+        {previous.data.title} →
+      </a>
+    )}
+  </nav>
 </BaseLayout>
 
 <style>
@@ -22,5 +69,18 @@ frontmatter.pubDate.slice(0, 10);
     font-size: clamp(0.8rem, 4vw, 1rem);
     margin: 0 0.5rem;
     color: var(--color-font-light);
+  }
+
+  .post-nav {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #ddd);
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.8rem, 4vw, 1rem);
+  }
+
+  .post-nav a:hover {
+    text-decoration: none;
   }
 </style>

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Temps"
 pubDate: 2018-05-01
 description: "Pause clope au ministère de la culure"

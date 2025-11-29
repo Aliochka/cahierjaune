@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "La page blanche"
 pubDate: 2018-04-15
 description: "Où je parle de la page blanche a une époque où elle m'était inconnue"

@@ -88,3 +88,8 @@ Certaines fautes d'orthogaphe sont de la licence poétique beaucoup d'autres jus
 Ou si github ne vous fait pas peur créez directement une issue : https://github.com/Aliochka/cahierjaune/issues
 
 Bon voyage...
+
+
+<div class="see-blog">
+  <a href="/">Voir le blog !</a>
+</div>

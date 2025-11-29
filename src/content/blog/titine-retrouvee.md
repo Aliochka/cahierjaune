@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Titine retrouvée"
 pubDate: 2015-01-01
 description: "Un poème pour la twingo de ma maman qui m'a emmené aux bouts du monde"

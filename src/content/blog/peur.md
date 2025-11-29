@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Peur"
 pubDate: 2018-05-27
 description: "Nouveau boulot, nouvelles peurs"

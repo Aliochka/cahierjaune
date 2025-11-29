@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "L'Art pour Romain"
 pubDate: 2018-03-19
 description: "Alors à l'Explorateur Culturel, je veux du l'art partout"

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Poème surréaliste en ré majeur"
 pubDate: 2018-01-01
 description: "Calligrame en forme de pipe"

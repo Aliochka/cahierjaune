@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Lettre à mon n+5"
 pubDate: 2020-06-18
 description: "Thoreau s'est démocratisé et tout le monde comprend les conséquences du procès Eichmann : on doit se battre contre ce qui mène l'humanité dans un mur.

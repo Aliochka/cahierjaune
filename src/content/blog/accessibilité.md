@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Quelques conseils pour rendre le web accessible"
 pubDate: 2023-11-15
 description: "Quelques conseils pour rendre les site web accessibles"

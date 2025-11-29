@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Sans titre"
 pubDate: 2021-02-28
 description: "Aucune idée de quand ni comment j'ai écris celui-là mais je le trouve très beau."

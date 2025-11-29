@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Romain 2024 - Mon programme pour la Fronce"
 pubDate: 2024-06-11
 description: "Il n'y a pas très longtemps j'ai écrit ce programme et l'ai envoyé à un responsable politique de gauche, l'idée c'est de se faire piquer les idées ici par les gens qui passent."

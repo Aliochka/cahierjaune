@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "cactus"
 pubDate: 2015-01-01
 description: "Un jeu avec Maria-Inès & Victorien, un thème le cactus, un poème, un morceau, une peinture ; le mec chelou du métro !"

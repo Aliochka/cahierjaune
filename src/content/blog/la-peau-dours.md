@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "La peau d’ours"
 pubDate: 2017-10-05
 description: "Une histoire de veillée scout"

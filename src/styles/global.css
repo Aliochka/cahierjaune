@@ -13,7 +13,7 @@
 	--color-bonjour: #E6BC4C;
 	--color-poème: #E6914C;
 	--color-philosophie: #E6A24C;
-	--color-scout: #C9E64C;
+	--color-récit: #C9E64C;
 }
 
 html {
@@ -88,4 +88,9 @@ h6 {
 p, a, ul {
 	font-size: clamp(1rem, 4vw, 1.2rem);
 	color: var(--color-font);
+}
+
+.see-blog {
+	text-align: center;
+	margin-bottom: 1rem;
 }

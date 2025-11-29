@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Truc"
 pubDate: 2018-10-02
 description: "Des trucs et autres bidules"

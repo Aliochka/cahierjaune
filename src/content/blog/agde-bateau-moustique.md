@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+
 title: "Agde Bateau Moustique"
 pubDate: 2017-08-01
 description: "Une nuit difficile sur un petit bateau plein de moustiques, heureusement il ya une loutre."
