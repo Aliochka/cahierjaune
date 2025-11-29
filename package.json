@@ -11,9 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.5",
-    "@fontsource-variable/noto-serif-kannada": "^5.0.8",
-    "@fontsource-variable/quicksand": "^5.0.15",
-    "astro": "^3.5.2"
+    "@astrojs/rss": "^4.0.14",
+    "@fontsource-variable/noto-serif-kannada": "^5.2.8",
+    "@fontsource-variable/quicksand": "^5.2.10",
+    "astro": "^5.16.2"
   }
 }
