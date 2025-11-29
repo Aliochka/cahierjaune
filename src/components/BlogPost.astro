@@ -5,6 +5,7 @@ type Tag =
   | "bonjour"
   | "poème"
   | "philosophie"
+  | "entreprise"
   | "récit";
 
 const { post } = Astro.props;
@@ -26,6 +27,7 @@ function getTagClass(tag: Tag) {
     "bonjour",
     "poème",
     "philosophie",
+    "entreprise",
     "récit",
   ];
   return validTags.includes(tag) ? tag : "" as Tag
@@ -73,6 +75,9 @@ const tags = post.frontmatter?.tags ?? [];
     border-radius: 0.25rem;
     border: 0.15rem dotted;
 
+    &.entreprise {
+      border-color: blue;
+    }    
     &.web {
       border-color: var(--color-web);
     }

@@ -1,11 +1,10 @@
 ---
 
-title: "Template pour posts"
-pubDate: 2022-07-01
-description: ""
+title: "Make Everything School"
+pubDate: 2025-07-01
+description: "Une école pour tout faire"
 author: "Romain"
-tags: [""]
-draft: true
+tags: ["entreprise"]
 ---
 
 
@@ -23,3 +22,5 @@ sous une autre forme
 on hybride
 
 Si on a pas d'idée on expérimente ce qu'on veut (on a forcément des idées)
+
+on a créé quelque chose

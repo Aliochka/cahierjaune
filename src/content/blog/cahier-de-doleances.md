@@ -4,7 +4,7 @@ title: "Cahier de doléances"
 pubDate: 2025-09-01
 description: "Un projet arrété pour mettre en valeur la parole des citoyens"
 author: "Romain"
-tags: ["politique"]
+tags: ["politique", "entreprise"]
 ---
 
 
