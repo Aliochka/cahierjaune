@@ -22,19 +22,126 @@ const blogPostsForComponent = allPublishedPosts.map((post) => ({
   frontmatter: post.data,
   url: `/blog/${post.slug}/`,
 }));
+
+// Liste de tous les tags uniques
+const allTags = Array.from(
+  new Set(
+    allPublishedPosts.flatMap((post) => post.data.tags ?? [])
+  )
+).sort();
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h1>Cahier Jaune</h1>
-  <ul>
+
+  {allTags.length > 0 && (
+    <section class="tags-bar" aria-label="Filtrer les articles par tag">
+      <button class="tag-button is-active" data-tag="all" aria-pressed="true">
+        Tous
+      </button>
+
+      {allTags.map((tag) => (
+        <button class={`tag-button ${tag}`} data-tag={tag}>
+          {tag}
+        </button>
+      ))}
+    </section>
+  )}
+
+  <ul class="posts-list">
     {blogPostsForComponent.map((post) => (
       <BlogPost post={post} />
     ))}
   </ul>
-</BaseLayout>
 
-<style>
-  ul {
-    padding: 0;
-  }
-</style>
+  <script>
+    const tagButtons = document.querySelectorAll(".tag-button");
+    const postItems = document.querySelectorAll("[data-tags-post]");
+
+    tagButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedTag = button.dataset.tag;
+
+        // état visuel du bouton actif
+        tagButtons.forEach((b) => {
+          const isActive = b === button;
+          b.classList.toggle("is-active", isActive);
+          b.setAttribute("aria-pressed", String(isActive));
+        });
+
+        // filtrage des articles
+        postItems.forEach((item) => {
+          const tagsString = item.dataset.tagsPost || "";
+          const tags = tagsString.split(",").filter(Boolean);
+
+          const shouldShow =
+            selectedTag === "all" || tags.includes(selectedTag);
+
+          item.style.display = shouldShow ? "" : "none";
+        });
+      });
+    });
+  </script>
+
+  <style>
+    ul {
+      padding: 0;
+    }
+
+    .posts-list {
+      list-style: none;
+      margin: 0;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .tags-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 2rem;
+    }
+
+    /* Base = ton style de .tag */
+    .tag-button {
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      border: 0.15rem dotted;
+      background: transparent;
+      cursor: pointer;
+      margin-right: 0.5rem;
+    }
+
+    /* Bouton actif */
+    .tag-button.is-active {
+      background: var(--color-font);
+      color: white;
+      border-color: var(--color-font);
+    }
+
+    /* Styles couleurs comme pour les tags */
+    .tag-button.web {
+      border-color: var(--color-web);
+    }
+    .tag-button.politique {
+      border-color: var(--color-politique);
+    }
+    .tag-button.bonjour {
+      border-color: var(--color-bonjour);
+    }
+    .tag-button.poème {
+      border-color: var(--color-poème);
+    }
+    .tag-button.philosophie {
+      border-color: var(--color-philosophie);
+    }
+    .tag-button.entreprise {
+      border-color: blue;
+    }
+    .tag-button.récit {
+      border-color: var(--color-récit);
+    }
+  </style>
+</BaseLayout>

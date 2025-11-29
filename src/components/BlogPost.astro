@@ -1,12 +1,5 @@
 ---
-type Tag =
-  | "web"
-  | "politique"
-  | "bonjour"
-  | "poème"
-  | "philosophie"
-  | "entreprise"
-  | "récit";
+import type { Tag } from "../types/types";
 
 const { post } = Astro.props;
 
@@ -19,9 +12,8 @@ const date = pubDate
   ? new Intl.DateTimeFormat("fr-FR", { dateStyle: "short" }).format(pubDate)
   : "";
 
-
 function getTagClass(tag: Tag) {
-  const validTags = [
+  const validTags: Tag[] = [
     "web",
     "politique",
     "bonjour",
@@ -30,14 +22,17 @@ function getTagClass(tag: Tag) {
     "entreprise",
     "récit",
   ];
-  return validTags.includes(tag) ? tag : "" as Tag
+  return validTags.includes(tag) ? tag : ("" as Tag);
 }
 
 // tags peut être absent sur certains posts → on met [] par défaut
-const tags = post.frontmatter?.tags ?? [];
+const tags: Tag[] = post.frontmatter?.tags ?? [];
+
+// data attribute pour le filtrage côté index.astro
+const tagsDataAttr = tags.join(",");
 ---
 
-<li>
+<li data-tags-post={tagsDataAttr}>
   <a href={post.url}>{post.frontmatter.title}</a>
   <p>{date}</p>
   <p class="description">{post.frontmatter.description}</p>
