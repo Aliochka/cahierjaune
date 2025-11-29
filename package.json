@@ -15,5 +15,9 @@
     "@fontsource-variable/noto-serif-kannada": "^5.2.8",
     "@fontsource-variable/quicksand": "^5.2.10",
     "astro": "^5.16.2"
+  },
+  "devDependencies": {
+    "@astrojs/ts-plugin": "^1.10.6",
+    "typescript": "^5.9.3"
   }
 }
