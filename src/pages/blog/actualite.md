@@ -2,9 +2,9 @@
 layout: ../../layouts/PostLayout.astro
 title: "Actualités"
 pubDate: 2025-04-16
-description: ""
+description: "Article erratique sur mes actualités du moment"
 author: "Romain"
-tags: ["politique", "poésie"]
+tags: ["politique"]
 ---
 
 J'ai repris l'écriture, est la preuve de ce texte rien que pour vous, je pense je vais reprendre l'écriture aussi sur ce blog
