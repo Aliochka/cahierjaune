@@ -1,5 +1,8 @@
 # Astro Starter Kit: Minimal
 
+Use Node.js 24. Run `nvm use` to select the version specified in `.nvmrc`,
+which Netlify also uses for builds.
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
